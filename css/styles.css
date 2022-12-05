@@ -1,0 +1,157 @@
+:root{ --primary-text-color:#2E2F42;
+--title-text-color:#434455;
+--secondary-text-color:#FFFFFF;
+--accent-color: #4D5AE5;
+--main-font: "Roboto",sans-serif;}
+
+body{
+ font-family: var(--main-font);  
+ color:var(--primary-text-color);
+ font-size: 16px;
+ background-color: var(--secondary-text-color);}
+
+ ul,p{margin: 0;}
+ a{cursor: pointer;}
+
+/* logo */
+.logo {font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color)}
+.logo-part{color:var(--accent-color);}
+.logo,.logo-part{text-decoration: none;}
+
+/* navigation */
+.list{list-style: none;}
+
+.nav-link{
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color:var(--primary-text-color)}
+.nav-link:hover,.nav-link:focus{color: var(--accent-color);}
+ /* contacts */
+  .contact-link{
+    line-height:1.5;
+    letter-spacing: 0.02em;
+    color:var(--title-text-color);
+    text-decoration: none;}
+  .contact-link:hover,.contact-link:focus{color: var(--accent-color);}
+
+  /* hero*/
+.hero{ background-color:var(--primary-text-color)}
+.hero-title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color:var(--secondary-text-color);}
+/* hero-btn */
+.button{background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family:var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height:1.18;
+    color:var(--secondary-text-color);
+    cursor: pointer;}
+.button:active{background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;}
+.button:hover{background: #4D5AE5;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;}
+    
+  
+/* features */
+.features-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height:1.2;
+    letter-spacing: 0.02em;}
+.features-text{
+    line-height:1.5;
+    letter-spacing: 0.02em;
+    color:var(--title-text-color);}
+
+
+ /* what we are doing */
+
+
+
+/* our team */
+.team {background: #F4F4FD;}
+.section-title {font-size: 36px;
+    line-height:1.1;
+    letter-spacing: 0.02em;}
+
+.team-name{ font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;}
+.team-text{ line-height:1.5;
+    letter-spacing: 0.02em;
+    color:var(--title-text-color);}
+
+    /* footer */
+     .footer{ background-color: var(--primary-text-color);}
+     .footer a {text-decoration: none;}
+    .logo-title {font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 18px;
+        line-height:1.16;
+        letter-spacing: 0.03em;
+        color:var(--accent-color)}
+    .logo-half {font-family:inherit;
+        letter-spacing: 0.03em;
+        color: #F4F4FD; }
+    .footer-text{
+        line-height:1.5;
+        letter-spacing: 0.02em;
+        color: #E7E9FC;}
+
+
+ /* Styles PORTFOLIO*/
+
+    /* buttons */
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+         margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;}
+
+    .filter{font-family:var(--main-font);
+        font-weight: 600;
+        font-size: 16px;
+        line-height:1.5;
+        letter-spacing: 0.04em;
+        color:var(--accent-color);
+        background: #F4F4FD;
+        border: 1px solid #E7E9FC;
+        border-radius: 4px;
+        cursor: pointer;}
+     .filter:hover {color: #FFFFFF;
+               background-color:var(--accent-color) }
+    .filter:focus {color:var(--primary-text-color);}
+    
+
+/* gallery-list-picture */
+   .gallery-heading{
+        font-size: 20px;
+        line-height:1.2;
+        letter-spacing: 0.02em;
+        color:var(--primary-text-color);}
+    .gallery-text{
+        line-height:1.5;
+        letter-spacing: 0.02em;
+        color:var(--title-text-color)}
