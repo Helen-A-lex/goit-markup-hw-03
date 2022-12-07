@@ -22,8 +22,7 @@ padding-right: 15px;
 margin-left: auto;
 margin-right: auto;
 outline: 3px solid red;}
-.main {display: flex;
-align-items: center;}
+
 
 .visually-hidden {
     position: absolute;
@@ -38,7 +37,8 @@ align-items: center;}
     overflow: hidden;}
 
 /* logo */
-.logo {font-family: 'Raleway';
+.logo {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
@@ -48,9 +48,20 @@ align-items: center;}
 .logo,.logo-part{text-decoration: none;}
 
 /* navigation */
+.main {display: flex;
+align-items: center;
+margin-bottom: 0;}
+
 .list{list-style: none;}
+
+.nav-main{ display: flex;
+margin-bottom: 24px;
+margin-right: auto;
+align-items: center;}
+
 .nav-list{display: flex;
-margin-left: 77px;}
+margin-left: 77px;
+align-items: center;}
 .nav-list .item +.item {margin-left: 40px;}
 
 .nav-link{
@@ -63,7 +74,9 @@ margin-left: 77px;}
 
  /* contacts */
   .contacts{ display: flex;
-margin-left: auto;}
+margin-left: auto;
+margin-bottom: 24px;
+align-items: center;}
   .contacts .item + .item{ margin-left: 40px;}
 
   .contact-link{
@@ -79,8 +92,8 @@ text-align: center;
 }
 .hero-title{margin-top: 0;
     margin-bottom:  48px;
-width: 492 px;
-height: 120 px;
+
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -110,6 +123,8 @@ height: 120 px;
     
   
 /* features */
+.features{ display: flex;
+}
 .features-title{ margin-top: 0;
     margin-bottom: 8px;;
 
@@ -117,7 +132,9 @@ height: 120 px;
     font-size: 20px;
     line-height:1.2;
     letter-spacing: 0.02em;}
-.features-text{
+
+
+.features-text{width: 264px;
    
     line-height:1.5;
     letter-spacing: 0.02em;
@@ -126,15 +143,19 @@ height: 120 px;
 
  /* what we are doing */
 
-
-
+.work {display: flex;
+}
+ .work-list .work-img:not(:first-child){ margin-right: 30px;}
+ .work-img{display: block;}
 /* our team */
 .team {background: #F4F4FD;}
-.section-title {margin-top: 120;
-    margin-bottom: 72;
+.section-title {margin-top: 0;
+    margin-bottom: 72px;
+    text-align: center;
     font-size: 36px;
     line-height:1.1;
     letter-spacing: 0.02em;}
+.team-item {display: flex;}
 
 .team-name{ font-size: 20px;
     line-height: 1.2;
