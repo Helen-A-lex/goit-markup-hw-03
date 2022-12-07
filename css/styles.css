@@ -4,6 +4,8 @@
 --accent-color: #4D5AE5;
 --main-font: "Roboto",sans-serif;}
 
+html{box-sizing: border-box;}
+
 body{
  font-family: var(--main-font);  
  color:var(--primary-text-color);
@@ -12,6 +14,28 @@ body{
 
  ul,p{margin: 0;}
  a{cursor: pointer;}
+
+
+.container{width:  1158px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+outline: 3px solid red;}
+.main {display: flex;
+align-items: center;}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
 
 /* logo */
 .logo {font-family: 'Raleway';
@@ -25,6 +49,9 @@ body{
 
 /* navigation */
 .list{list-style: none;}
+.nav-list{display: flex;
+margin-left: 77px;}
+.nav-list .item +.item {margin-left: 40px;}
 
 .nav-link{
     font-weight: 500;
@@ -33,7 +60,12 @@ body{
     text-decoration: none;
     color:var(--primary-text-color)}
 .nav-link:hover,.nav-link:focus{color: var(--accent-color);}
+
  /* contacts */
+  .contacts{ display: flex;
+margin-left: auto;}
+  .contacts .item + .item{ margin-left: 40px;}
+
   .contact-link{
     line-height:1.5;
     letter-spacing: 0.02em;
@@ -42,17 +74,26 @@ body{
   .contact-link:hover,.contact-link:focus{color: var(--accent-color);}
 
   /* hero*/
-.hero{ background-color:var(--primary-text-color)}
-.hero-title{
+.hero{ background-color:var(--primary-text-color);
+text-align: center;
+}
+.hero-title{margin-top: 0;
+    margin-bottom:  48px;
+width: 492 px;
+height: 120 px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color:var(--secondary-text-color);}
 /* hero-btn */
-.button{background: #4D5AE5;
+.button{
+    background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 170px; 
+    height: 51px;
     font-family:var(--main-font);
     font-weight: 500;
     font-size: 16px;
@@ -69,12 +110,15 @@ body{
     
   
 /* features */
-.features-title{
+.features-title{ margin-top: 0;
+    margin-bottom: 8px;;
+
     font-weight: 600;
     font-size: 20px;
     line-height:1.2;
     letter-spacing: 0.02em;}
 .features-text{
+   
     line-height:1.5;
     letter-spacing: 0.02em;
     color:var(--title-text-color);}
@@ -86,7 +130,9 @@ body{
 
 /* our team */
 .team {background: #F4F4FD;}
-.section-title {font-size: 36px;
+.section-title {margin-top: 120;
+    margin-bottom: 72;
+    font-size: 36px;
     line-height:1.1;
     letter-spacing: 0.02em;}
 
@@ -118,17 +164,7 @@ body{
  /* Styles PORTFOLIO*/
 
     /* buttons */
-    .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-         margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;}
+   
 
     .filter{font-family:var(--main-font);
         font-weight: 600;
